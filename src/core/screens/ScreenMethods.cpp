@@ -72,7 +72,7 @@ namespace Screen { namespace Methods {
 
     void printText() {
         lcdSetCursor0_0();
-        lcdPrint_P(PSTR("Text="));
+        lcdPrint_P(PSTR("Temp="));
         if(ProgramData::battery.enable_externT) {
             lcdPrintTemperature(AnalogInputs::getDeltaLastT(), 8);
         } else {
